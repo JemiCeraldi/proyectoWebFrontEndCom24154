@@ -19,7 +19,9 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('web.urls')),#registramos las urls de mi app web
     path('tareas/', include('web.urls')),#registramos las urls de mi app web
+
     #borrar
     #modificar
 ]
